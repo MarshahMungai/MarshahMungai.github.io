@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <title>Diani Beach</title>
+    <style>
+    header{
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.747);
+        margin: 0px;
+        justify-content: center;  
+    }
+
+    main{
+        background-color: rgba(255, 255, 255, 0.582);
+    }
+
+    .content{
+        width: 98.3%;
+        height: 430px;
+        text-align: center;
+        color: rgb(20, 86, 143);
+        font-size: 17px;
+        position: relative;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        background-color: rgba(0, 0, 0, 0.747);
+        width: 100%;
+        height: 60px;
+        color: whitesmoke;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    ul li{
+        display: inline-block;
+        margin: 0 20px;
+        list-style: none; 
+        padding-top: 25px;
+    }
+    ul li a:hover{
+    color: rgba(253, 236, 4, 0.911);
+}
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(Images/bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+        font-family: cursive;    
+    }
+
+    #slideshow {
+    overflow: hidden;
+    height: 500px;
+    width: 880px;
+    margin: 0 auto;
+}
+ 
+/* Style each of the sides
+with a fixed width and height */
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+/* Add animation to the slides */
+ 
+.slide-wrapper {
+     
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(728px * 4);
+     
+    /* Specify the animation with the
+  duration and speed */
+    animation: slide 10s ease infinite;
+}
+ 
+
+
+@keyframes slide {
+     
+    /* Calculate the margin-left for
+  each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+}
+
+
+    
+    </style>
+  </head>
+  <body>
+    <header style="display: flex; flex-direction: row;">
+        <div class="logo" style="flex-grow: 1">
+            <img src="images/diani.png" height="120px" width="500px">
+        </div>
+        <div class="links" style="flex-grow: 1; margin-left: 200px; padding-top: 12px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="book.html">Book Stay</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="content" style="display: flex; margin-bottom: 50px;">
+            <div class="article" style="height: 300px; width: 40%;">
+                <h2 style="color: rgba(0, 0, 0, 0.808);">A BRIEF HISTORY OF DIANI</h2>
+                <p style=" border: solid 2px whitesmoke; border-radius: 20px; color: black; font-size: medium; background-color: rgba(127, 255, 212, 0.397);">
+                
+                    Diani, and perhaps, the whole of Coastal Kenya is the believed to be the origin of East African Civilization. Little is known about Diani’s specific history but shreds of evidence suggest that her history can be traced back in the 8th Century AD.
+                    
+                    In the 9th century, the Indian and Arab traders started to mingle with the indigenous population to create the unique Swahili cultures, much of which is still thriving until this day. During this period, the whole Coastal region of Kenya enjoyed a golden age of trade. In the 15th Century, the Portuguese arrived at the Kenyan Coast and effectively dominated the region for 2 centuries after which the Oman Arabs took over.
+                    
+                    At the turn of the 19th century, the British established a foothold and declared the coast a British Protectorate. Jadini Beach Hotel was the first tourist hotel to be built in Diani beach back in 1937. It was formerly a cottage. Trade Winds and Two Fishes followed later as tourism took off in Diani.
+                    
+                    Today, Diani is regarded as one of the best beach destinations in the World as well as the leading beach destination in Africa.
+                </p>
+            </div>
+            <div class="slide" style="width: 60%; height: 250px; float: right; border-radius: 20px;">
+                <div id="slideshow" style="width: 700px; height: 450px; margin-left: 80px;">
+                    <div class="slide-wrapper">
+                      <!-- Define each of the slides
+                         and write the content -->
+                      <div class="slide">
+                        <img
+                          src="images/im3.jpg"
+                          width="100%"
+                          height="100%"
+                          class="slide-number"
+                        />
+                      </div>
+                      <div class="slide">
+                        <img
+                          src="images/jgiu.jpg"
+                          width="100%"
+                          height="100%"
+                          class="slide-number"
+                        />
+                      </div>
+                      <div class="slide">
+                        <img
+                          src="images/1.jpg"
+                          width="100%"
+                          height="100%"
+                          class="slide-number"
+                        />
+                      </div>
+                      <div class="slide">
+                        <img
+                          src="images/im1.jpg"
+                          width="100%"
+                          height="100%"
+                          class="slide-number"
+                        />
+                      </div>
+                      <div class="slide">
+                        <img
+                          src="images/im2.jpg"
+                          width="100%"
+                          height="100%"
+                          class="slide-number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <h2 style=" text-align: center; background-color: rgba(127, 255, 212, 0.466);">Diani Beach</h2>
+        <center> <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=diani%20beach&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net">fmovies</a><br><style>.mapouter{border: solid 2px whitesmoke; border-radius: 25px; overflow: hidden; position:relative;text-align:right;height:500px;width:1080px;}</style><a href="https://www.embedgooglemap.net">put google maps on your website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div></div></center>
+    </main>
+    <footer>
+        <p style="padding-top: 25px;">Visit Diani !!!.</p>
+    </footer>
+
+  </body>
+</html>

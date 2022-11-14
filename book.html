@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diani Beach</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <style>
+        header{
+            display: flex;
+            height: auto;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.747);
+            margin: 0px;
+            justify-content: center;  
+        }
+    
+        main{
+            background-color: rgba(255, 255, 255, 0.582);
+        }
+    
+        .content{
+            width: 98.3%;
+            height: 630px;
+            text-align: center;
+            color: rgb(20, 86, 143);
+            font-size: 17px;
+            position: relative;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #button:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+    
+        footer{
+            background-color: rgba(0, 0, 0, 0.747);
+            width: 100%;
+            height: 60px;
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        ul li{
+            display: inline-block;
+            margin: 0 20px;
+            list-style: none; 
+            padding-top: 25px;
+        }
+        ul li a:hover{
+        color: rgba(253, 236, 4, 0.911);
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        input{
+            height: 0.6cm;
+        }
+
+        #caro{
+            height: 480px;
+            width: 980px;
+            margin-top: 70px;
+            margin-left: 50px;
+        }
+    
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            font-family: cursive;    
+        }
+        select{
+        margin-top: 20px;
+        height: 45px;
+        width: 300px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding-left: 30px;
+        border-radius: 30px;
+      }
+        </style>
+</head>
+<body>
+    <header style="display: flex; flex-direction: row;">
+        <div class="logo" style="flex-grow: 1">
+            <img src="images/diani.png" height="120px" width="500px">
+        </div>
+        <div class="links" style="flex-grow: 1; margin-left: 200px; padding-top: 12px;">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="book.html">Book Stay</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="display: flex;">
+
+        <div id="caro">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/swahili.jpg" class="d-block h-100 w-100" alt="...">
+                <center><h5>Swahili Beach Resort</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/maji.jpg" class="d-block w-100" alt="...">
+                <center><h5>The Maji Beach Boutique Hotel</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/sea.jpg" class="d-block w-100" alt="...">
+                <center><h5>Diani Sea Lodge</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/reef.jpg" class="d-block w-100" alt="...">
+                <center><h5>Diani Reef Beach Resort</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/nomad.jpg" class="d-block w-100" alt="...">
+                <center><h5>The Sands at Nomad Hotel</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/neptune.jpg" class="d-block w-100" alt="...">
+                <center><h5>Neptune Palm Beach Boutique Resort & Spa</h5></center>
+              </div>
+              <div class="carousel-item">
+                <img src="images/lovers.jpg" class="d-block w-100" alt="...">
+                <center><h5>Waterlovers Resort</h5></center>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="content">
+            <div id="form-box" style="float: right; margin-top: 20px; border: solid 2px rgba(253, 236, 4, 0.911); background-color: rgba(0, 0, 0, 0.541); width: 620px; height: 420px; border-radius: 25px; margin-left: 25%;"> 
+                <h2 style=" color: rgba(253, 236, 4, 0.911)"><p>Book Hotel Stay</p></h2>
+             <form action="booked.html">
+                 <label style="color: white;">First Name</label><br>
+                 <input style="background-color: transparent; border-radius: 20px; color: aliceblue; border: solid 1px whitesmoke; width: 8cm;" type="text"><br>
+                 <label style="color: white;">Last Name</label><br>
+                 <input style="background-color: transparent; border-radius: 20px; color: aliceblue; border: solid 1px whitesmoke; width: 8cm;" type="text"><br>
+                 <label style="color: white;">Guest(s)</label><br>
+                 <input style="background-color: transparent; border-radius: 20px; color: aliceblue; border: solid 1px whitesmoke; width: 8cm;" type="number"y><br>
+                 <select>
+                    <option value="" disabled selected hidden>Hotel</option>
+                    <option>The Sands at Nomad Hotel</option>
+                    <option>Swahili Beach Resort</option>
+                    <option>Neptune Palm Beach Boutique Resort & Spa</option>
+                    <option>Diani Sea Lodge</option>
+                    <option>Diani Reef Beach Resort</option>
+                    <option>The Maji Beach Boutique Hotel</option>
+                    <option>Leopard Beach Resort</option>
+                    <option>The Villa Luxury Suites Hotel</option>
+                    <option>Leisure Lodge Beach & Golf Resort</option>
+                    <option>Waterlovers Resort</option>
+                  </select><br><br>
+                 <label style="color: white;">Check in</label>
+                 <input style="background-color: transparent; border-radius: 20px; color: aliceblue; border: solid 1px whitesmoke;" type="date">
+                 <label style="color: white;">Check Out</label>
+                 <input style="background-color: transparent; border-radius: 20px; color: aliceblue; border: solid 1px whitesmoke;" type="date"><br><br>
+                 <button id="button" style="width: 3cm; height: 1cm; border: solid 1px rgba(255, 255, 253, 0.911); border-radius: 20px; background-color: rgba(253, 236, 4, 0.562); color: whitesmoke; cursor: pointer;">BOOK</button>
+             </form>
+             
+           </div>
+           
+        </div>
+    </main>
+
+    <footer>
+        <p style="padding-top: 25px;">Visit Diani !!!.</p>
+    </footer>
+</body>
+</html>
